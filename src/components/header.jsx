@@ -3,6 +3,7 @@ import MenuItem from "./MenuItem";
 import { IoIosHome } from "react-icons/io";
 import { BsInfoCircleFill } from "react-icons/bs";
 import Link from "next/link";
+import DarkModeSwitch from "./DarkModeSwitch";
 
 function Header() {
   return (
@@ -11,7 +12,8 @@ function Header() {
         <MenuItem title="Home" address="/" Icon={IoIosHome} />
         <MenuItem title="About" address="/about" Icon={BsInfoCircleFill} />
       </div>
-      <div>
+      <div className="flex items-center space-x-5">
+        <DarkModeSwitch />
         <Link href="/">
           <h2 className="text-2xl">
             <span className="font-bold bg-amber-500 py-1 px-2 rounded-lg mr-1">
