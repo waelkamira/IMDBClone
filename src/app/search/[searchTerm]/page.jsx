@@ -10,7 +10,7 @@ export default async function SearchPage({ params }) {
   }
   const data = await res.json();
   const results = data.results;
-  console.log(results);
+  // console.log(results);
   return (
     <div>
       {results && results.length === 0 && (

@@ -1,6 +1,3 @@
-// eslint-disable max-classes-per-file
-// This fails!
-
 function About() {
   return (
     <div className="max-w-6xl mx-auto space-y-4 p-4">
